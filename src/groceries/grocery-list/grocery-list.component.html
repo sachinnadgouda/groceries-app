@@ -1,0 +1,6 @@
+<app-color-filter [colors]="availableColors()" (colorChange)="onColorChange($event)"></app-color-filter>
+<mat-list>
+  <mat-list-item *ngFor="let grocery of groceries; trackBy: trackById" (click)="selectGrocery(grocery)">
+    {{ grocery.name }}
+  </mat-list-item>
+</mat-list>
