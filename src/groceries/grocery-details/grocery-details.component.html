@@ -1,0 +1,10 @@
+@if (grocery()) {
+  <mat-card>
+    <mat-card-title>{{ grocery()?.name }}</mat-card-title>
+    <mat-card-content>
+      <p><strong>Color:</strong> {{ grocery()?.color }}</p>
+      <p><strong>Price:</strong> {{ grocery()?.price }}</p>
+      <p><strong>Quantity:</strong> {{ grocery()?.quantity }}</p>
+    </mat-card-content>
+  </mat-card>
+}
